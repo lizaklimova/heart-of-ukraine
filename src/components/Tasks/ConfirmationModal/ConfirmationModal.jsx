@@ -41,6 +41,7 @@ const ConfirmationModal = ({
   const [isRegionsSelectOpen, setIsRegionsSelectOpen] = useState(false);
 
   const location = useLocation();
+
   const { t, i18n } = useTranslation();
   const firstName = useSelector(selectUserFistName);
   const lastName = useSelector(selectUserLastName);
