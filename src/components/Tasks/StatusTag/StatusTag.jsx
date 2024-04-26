@@ -24,6 +24,8 @@ const StatusTag = ({ tag }) => {
     case STATUSES_VALUES.canceled:
       tagName.current = "canceled";
       break;
+    default:
+      tagName.current = "active";
   }
 
   return (

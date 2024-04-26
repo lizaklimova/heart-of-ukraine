@@ -73,6 +73,7 @@ const NotificationsSubPage = () => {
     const throttledScroll = throttle(handleScroll, 500);
     scrollWrapRef.current.addEventListener("scroll", throttledScroll);
     return () =>
+      // eslint-disable-next-line
       scrollWrapRef?.current?.removeEventListener("scroll", throttledScroll);
   }, []);
 

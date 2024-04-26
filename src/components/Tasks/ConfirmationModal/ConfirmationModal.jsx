@@ -63,7 +63,7 @@ const ConfirmationModal = ({
     return () => {
       document.removeEventListener("keydown", handleESCClose);
     };
-  }, []);
+  }, [closeModal]);
 
   const CONFIRM_INIT_VALUES = {
     firstName: firstName.split(" ")[0],

@@ -105,10 +105,7 @@ export const changeProfileThunk = createAsyncThunk(
   "users/changeProfileThunk",
   async ({ formData }, { rejectWithValue }) => {
     try {
-      const { data } = await axiosInstance.put(
-        ENDPOINTS.users.changeProfile,
-        formData
-      );
+      await axiosInstance.put(ENDPOINTS.users.changeProfile, formData);
       return formData;
     } catch (error) {
       return rejectWithValue(error.response.status);
