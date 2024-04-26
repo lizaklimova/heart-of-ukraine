@@ -54,7 +54,7 @@ const Header = () => {
     if (userAvatar) {
       getUserAvatar();
     }
-  }, [setUserAvatarUrl]);
+  }, [setUserAvatarUrl, userAvatar]);
 
   useEffect(() => {
     if (shouldScroll) {

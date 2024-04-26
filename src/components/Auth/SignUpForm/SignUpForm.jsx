@@ -3,14 +3,14 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
-import { toast } from "react-hot-toast";
+// import { toast } from "react-hot-toast";
 import sprite from "assets/icons/sprite.svg";
 import { registerSchema } from "schemas";
 import { REGISTER_INIT_VALUES } from "constants";
 import { registrationThunk } from "../../../redux/auth/authOperations";
 import ShowPasswordBtn from "../ShowPasswordBtn";
 import PwdRequirements from "../PwdRequirements";
-import Notification from "components/Notification";
+// import Notification from "components/Notification";
 import SmallSpinner from "components/Loaders/SmallSpinner";
 import { authSlice } from "../../../redux/auth/authSlice";
 import { setStorageData } from "helpers";
@@ -27,10 +27,10 @@ const SignUpForm = () => {
   const [isPwdShown, setIsPwdShown] = useState(false);
   const [isConfirmPwdShown, setIsConfirmPwdShown] = useState(false);
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const isLanguageUk = i18n.language === "uk";
+  // const isLanguageUk = i18n.language === "uk";
 
   const onSubmit = async ({
     firstName,

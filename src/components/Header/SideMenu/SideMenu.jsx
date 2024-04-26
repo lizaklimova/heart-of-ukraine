@@ -57,7 +57,7 @@ const SideMenu = ({ isOpen, onClose, onClickNavigate, notifications }) => {
     if (userAvatar) {
       getUserAvatar();
     }
-  }, [setUserAvatarUrl]);
+  }, [setUserAvatarUrl, userAvatar]);
 
   const handleResize = () => {
     setIsWideScreen(window.innerWidth >= 1440);

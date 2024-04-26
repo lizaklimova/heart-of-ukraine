@@ -75,7 +75,7 @@ const AboutProject = () => {
           </SecondBlock>
 
           <ThirdBlock>
-            <p>{currentLanguage ? thirdLineUa : secondLineEn}</p>
+            <p>{currentLanguage ? thirdLineUa : thirdLineEn}</p>
             <picture>
               <source
                 srcSet={`${grannyDesk1x} 1x, ${grannyDesk2x} 2x`}

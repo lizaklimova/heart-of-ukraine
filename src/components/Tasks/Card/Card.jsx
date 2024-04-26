@@ -55,7 +55,6 @@ const Card = ({
     authorLastName,
     authorImageId,
     authorEmail,
-    authorDetails,
   },
   desktop,
   status,
@@ -112,7 +111,7 @@ const Card = ({
     if (authorImageId) {
       getUserAvatar();
     }
-  }, [setAuthorAvatar]);
+  }, [setAuthorAvatar, authorImageId]);
 
   const cancelReq = async () => {
     await cancelHelpRequest({ id });
