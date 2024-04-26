@@ -1,4 +1,3 @@
-import { getNews } from "api/news/getNews";
 import Hero from "./Hero";
 import AboutProject from "./AboutProject";
 import News from "./News";

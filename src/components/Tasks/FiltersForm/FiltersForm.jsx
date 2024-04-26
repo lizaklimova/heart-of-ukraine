@@ -30,6 +30,7 @@ const FiltersForm = ({
   const [maxFiltersLength, setMaxFiltersLength] = useState(
     determineFiltersLength(variant)
   );
+  // eslint-disable-next-line
   const [_, setSearchParams] = useSearchParams();
 
   const { t } = useTranslation();
@@ -51,7 +52,7 @@ const FiltersForm = ({
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [window.innerWidth, variant]);
+  }, [variant]);
 
   return (
     <Form $variant={variant} onSubmit={handleFiltersSearch}>

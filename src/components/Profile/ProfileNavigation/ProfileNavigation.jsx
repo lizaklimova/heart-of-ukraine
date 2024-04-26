@@ -21,7 +21,6 @@ import {
   ItemContentWrap,
   NavigateCompSvg,
   NavigateText,
-  ProfileOptionsLink,
   SvgAndNameWrap,
 } from "./NavigationItem/NavigationItem.styled";
 

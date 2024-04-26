@@ -104,7 +104,8 @@ const SearchFiltersList = ({
 
   const checkboxProps = (filterType, element) =>
     defaultCheckedCategories && defaultCheckedRegions
-      ? !!filterType.find((el) => el == element)
+      ? // eslint-disable-next-line
+        !!filterType.find((el) => el == element)
       : false;
 
   return (

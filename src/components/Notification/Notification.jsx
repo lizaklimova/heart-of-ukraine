@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { setNotificationAsRead } from "api/notifications";
 import { REQUEST_TYPE } from "constants";
-import { formatDate, formatTime, smoothScrollToTarget } from "helpers";
+import { formatDate, formatTime } from "helpers";
 import sprite from "assets/icons/sprite.svg";
 import RightArrow from "assets/icons/RightArrow";
 import {
@@ -23,7 +23,6 @@ const Notification = ({
   time,
   data = {},
   unreadIds = [],
-  setIsNotificationDeleted,
 }) => {
   const location = useLocation();
   const { t, i18n } = useTranslation();
@@ -55,7 +54,7 @@ const Notification = ({
         }
       });
     }
-  }, [unreadIds, data]);
+  }, [unreadIds, data, id, isRead]);
 
   return (
     <>

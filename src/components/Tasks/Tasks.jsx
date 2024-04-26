@@ -45,6 +45,7 @@ const Tasks = ({
     useState(false);
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
   const [isSuccessOfferModalOpen, setIsSuccessOfferModalOpen] = useState(false);
+  // eslint-disable-next-line
   const [_, setAreTasksSorted] = useState(false);
 
   const [searchParams, setSearchParams] = useSearchParams();
@@ -74,7 +75,13 @@ const Tasks = ({
       setDefaultCheckedRegions(regArr);
       setRegionsSearch(regArr);
     }
-  }, [searchParams]);
+  }, [
+    searchParams,
+    categoriesSearch,
+    regionsSearch,
+    setAreItemsFiltered,
+    setPage,
+  ]);
 
   const handleFiltersSearch = (event) => {
     event.preventDefault();
@@ -173,6 +180,7 @@ const Tasks = ({
                       />
                     );
                   }
+                  return null;
                 })}
             </TasksList>
           ) : (

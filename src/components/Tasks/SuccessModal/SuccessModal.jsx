@@ -42,7 +42,7 @@ const SuccessModal = ({
     return () => {
       document.removeEventListener("keydown", handleESCClose);
     };
-  }, [closeModal]);
+  }, []);
 
   return (
     <Backdrop

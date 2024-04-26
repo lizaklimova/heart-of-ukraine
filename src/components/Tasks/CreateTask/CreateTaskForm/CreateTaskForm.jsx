@@ -73,7 +73,14 @@ const CreateTaskForm = ({
     } else {
       localStorage.removeItem("updateDetails");
     }
-  }, []);
+  }, [
+    defaultValues.title,
+    defaultValues.categories,
+    defaultValues.region,
+    setCategoriesFilters,
+    setRegionsFilters,
+    urlParams,
+  ]);
 
   const onSubmit = async ({ title, description, comment }, actions) => {
     const requestType = defaultValues.reqType

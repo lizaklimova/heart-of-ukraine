@@ -32,7 +32,7 @@ const ChangeSection = () => {
     if (userAvatar) {
       getUserAvatar();
     }
-  }, [setUserAvatarUrl]);
+  }, [setUserAvatarUrl, userAvatar]);
 
   const onAttachingAvatar = async (event) => {
     const file = event.target.files[0];

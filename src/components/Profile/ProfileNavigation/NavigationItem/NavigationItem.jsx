@@ -13,7 +13,6 @@ import {
 
 const NavigationItem = ({ icon, text, to, state }) => {
   const { t } = useTranslation();
-  const location = useLocation();
 
   return (
     <ProfileOptionsItem>

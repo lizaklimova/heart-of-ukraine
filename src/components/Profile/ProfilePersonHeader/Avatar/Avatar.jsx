@@ -18,7 +18,8 @@ const Avatar = ({ classN, avatar }) => {
     if (userAvatar) {
       getUserAvatar();
     }
-  }, [setUserAvatarUrl]);
+  }, [setUserAvatarUrl, userAvatar]);
+
   return (
     <AvatarHeader
       className={classN}
