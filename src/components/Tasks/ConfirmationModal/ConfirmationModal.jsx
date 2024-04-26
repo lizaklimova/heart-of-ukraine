@@ -125,7 +125,10 @@ const ConfirmationModal = ({
     <>
       <ConfirmBackdrop
         onClick={({ target, currentTarget }) => {
-          if (target === currentTarget) closeModal();
+          if (target === currentTarget) {
+            setIsConfirmApplicationOpen(false);
+            document.body.style.overflow = "visible";
+          }
         }}
       >
         <ConfirmModal>

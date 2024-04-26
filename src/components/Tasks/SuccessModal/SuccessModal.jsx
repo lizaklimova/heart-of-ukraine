@@ -47,7 +47,13 @@ const SuccessModal = ({
   return (
     <Backdrop
       onClick={({ target, currentTarget }) => {
-        if (target === currentTarget) closeModal();
+        if (target === currentTarget) {
+          setShowSuccessModal(false);
+          document.body.style.overflow = "visible";
+          if (variant === "create") {
+            setShouldResetElements(true);
+          }
+        }
       }}
     >
       <Modal>
