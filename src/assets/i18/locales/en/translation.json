@@ -1,0 +1,334 @@
+{
+  "validation": {
+    "required": "Required filed",
+    "check": "Check entered data and try one more time",
+    "name": {
+      "min": "Must be at least 2 characters",
+      "max": "Must be less than 50 characters",
+      "matches": "Field must not contain any numbers or symbols"
+    },
+    "phone": {
+      "invalid": "Invalid phone format"
+    },
+    "email": {
+      "invalid": "Invalid email format"
+    },
+    "password": {
+      "length": "Must be between 8 and 100 characters long",
+      "uppercase": "Must contain at least one uppercase letter",
+      "lowercase": "Must contain at least one lowercase letter",
+      "digit": "Must contain at least one digit",
+      "specialSym": "Must not contain special characters",
+      "confirm": "Passwords do not match"
+    },
+    "region": "Invalid value for region",
+    "reg": {
+      "max": "Must be less than 50 characters",
+      "matches": "Field must not contain any numbers or symbols"
+    },
+    "organization": {
+      "max": "Must be less than 200 characters"
+    },
+    "about": {
+      "max": "Must be less than 350 characters"
+    }
+  },
+  "auth": {
+    "backHome": "Back to home",
+    "welcome": "Welcome!",
+    "fillFields": "Please fill in all required fields",
+    "loginText": "Welcome back. Log in to your account",
+    "login": "Sign in",
+    "register": "Sign up",
+    "firstName": "First name *",
+    "lastName": "Last name (optional)",
+    "email": "Email *",
+    "phone": "Phone number *",
+    "password": "Password *",
+    "placeholder": "Enter data",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "or": "or",
+    "googleSignIn": "Sign in with Google",
+    "googleSignUp": "Sign up with Google",
+    "agreement": "I agree with",
+    "privacyPolicy": "the Privacy policy and terms of service.",
+    "forgotPassword": "Forgot password?",
+    "reset": "Reset",
+    "passwordRecover": "Password recovery",
+    "checkCredentials": "Check your credentials and try one more time",
+    "enterEmail": "Enter the email address associated with your account",
+    "recover": "Recover",
+    "onEmail": "To the email address",
+    "linkSended": "a one-time link has been sent to recover your password.",
+    "noLink": "Didn't receive the link?",
+    "sendAgain": "Send again",
+    "back": "Back",
+    "registerErrorMsg": "Sign up error"
+  },
+  "verify": {
+    "head": "Verification",
+    "text": {
+      "start": "A one-time account verification link has been sent to",
+      "end": "."
+    },
+    "ref": "Did not receive the link?",
+    "button": "Send again"
+  },
+  "signinsuccess": {
+    "head": "Welcome!",
+    "text": "Access to your account has been successfully restored.",
+    "button": "Go to homepage"
+  },
+  "passRecover": {
+    "head": "Almost there",
+    "text": "To recover your account, please create a new password.",
+    "button": "Recover",
+    "password": "New password",
+    "passwordConf": "Confirm password",
+    "email404": "User with specified email not found",
+    "email500": "Failed to send email message",
+    "pass400": "Invalid password",
+    "pass401": "Token has expired",
+    "pass500": "Password recovery failed",
+    "defaultError": "Something went wrong"
+  },
+  "logo": "Heart of Ukraine",
+  "header": {
+    "about": "About the project",
+    "news": "News",
+    "contacts": "Contacts"
+  },
+  "sideMenu": {
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "myProfile": "My profile",
+    "personalInfo": "Personal information",
+    "requests": "My requests and announcements",
+    "feedback": "Feedback sent",
+    "notify": "Notifications",
+    "mainPage": "Main page",
+    "needHelp": "Need help",
+    "wantHelp": "Want to help",
+    "support": "Support service"
+  },
+  "hero": {
+    "who": "WHOEVER",
+    "needs": "NEEDS",
+    "will": "WILL",
+    "finds": "FIND",
+    "descr": "A service for connecting volunteers and individuals in need of humanitarian assistance",
+    "joinUs": "Join us"
+  },
+  "about": {
+    "title": "ABOUT THE PROJECT"
+  },
+  "opportunities": {
+    "title": "YOU CAN"
+  },
+  "news": {
+    "title": "NEWS"
+  },
+  "tasks": {
+    "wantToHelpTitle": "I provide help",
+    "needHelpTitle": "I need help",
+    "more": "More",
+    "category": "CATEGORY",
+    "region": "REGION",
+    "offersForYou": "OFFERS FOR YOU",
+    "requestsForYou": "REQUESTS FOR YOU",
+    "seeDetails": "See details",
+    "hide": "Hide",
+    "applyForHelp": "Apply",
+    "respondToHelp": "Respond",
+    "createOffer": "Create an offer",
+    "createRequest": "Create a request",
+    "back": "Back",
+    "resetFilters": "Reset filters",
+    "search": "Search",
+    "notFoundTitle": "Nothing found for Your query",
+    "notFoundText": "We couldn't find what You were looking for. Please adjust the given metrics and try again or",
+    "createNewOffer": " create Your own offer.",
+    "createNewRequest": " create Your own request."
+  },
+  "createTask": {
+    "goToSearch": "Go to search",
+    "titleOffer": "Offer",
+    "titleRequest": "Request",
+    "categoryRestriction": "*you can select up to 5 categories",
+    "regionRestriction": "*you can select only 1 region",
+    "placeholder": "Your comment",
+    "name": "Name",
+    "descr": "Description",
+    "additional": "Additional (optional)",
+    "addPic": "Add attachments",
+    "post": "Publish",
+    "validation": {
+      "titleMin": "Title must be at least 5 characters long",
+      "titleMax": "Title must be up to 100 characters long",
+      "descrMin": "Description must be at least 40 characters long",
+      "enterData": "Enter data",
+      "chooseCategory": "Choose category",
+      "chooseRegion": "Choose region",
+      "fileMaxSize": "The file size should not exceed 1MB",
+      "maxQnty": "You cannot attach more than 4 files"
+    },
+    "successWindow": {
+      "congrat": "Congratulations!",
+      "wellDone": "Well done!",
+      "offerText": "Your request is ready for execution. The status of the application has been changed to 'In progress.'",
+      "textCreate": "Your application has been published.",
+      "textCreateOffer": "Your offer has been published.",
+      "textCreateRequest": "Your request has been published.",
+      "textApply": "Your response to the application will be considered within a few days. Monitor the application status in your user profile or await notification.",
+      "backHome": "Back home",
+      "sent": "Sent!",
+      "myProfile": "My profile",
+      "updatedText": "Your application has been successfully updated!"
+    }
+  },
+  "confirmationModal": {
+    "text": "Please provide your details to proceed to the next stage of request processing",
+    "name": "First name",
+    "surname": "Last name (optional)",
+    "surnameDetail": "Last name",
+    "phone": "Phone number",
+    "shortPhone": "Phone num.",
+    "region": "Region",
+    "comment": "Comment (optional)",
+    "yourName": "Your first name",
+    "yourSurname": "Your last name",
+    "yourRegion": "Your region",
+    "yourNum": "Your phone number",
+    "yourComment": "Your comment",
+    "checkbox": "By sending the request, you grant access to your personal data to the user",
+    "send": "Send",
+    "conflictErr": "Author can't be executor",
+    "alreadyApplied": "You already respond to this help-request"
+  },
+  "footer": {
+    "about": "About the project",
+    "needHelp": "Need help",
+    "wantToHelp": "Want to help",
+    "contacts": "Contacts",
+    "support": "Support",
+    "privacyPolicy": "Privacy policy",
+    "termsOfUse": "Terms of use",
+    "allRights": "All rights reserved"
+  },
+  "cta": {
+    "needHelp": "Need help",
+    "wantHelp": "Want to help",
+    "push": "Push here"
+  },
+  "profile": {
+    "back": "Back",
+    "myProfile": "My profile",
+    "personalInfo": "Personal information",
+    "changeData": "Data editing",
+    "processed": "processed applications",
+    "published": "published applications",
+    "changePwd": "Password change",
+    "nav": {
+      "personal": "Personal data",
+      "requests": "My requests and announcements",
+      "responses": "Submitted responses",
+      "notifications": "Notifications",
+      "support": "Support service",
+      "logout": "Log out",
+      "changePassword": "Password change"
+    },
+    "personal": {
+      "name": "Name",
+      "surname": "Surname",
+      "phone": "Phone",
+      "email": "Email",
+      "region": "Region",
+      "organization": "Organization",
+      "about": "About",
+      "change": "Change data",
+      "delete": "Delete profile",
+      "placeholder": "Not specified",
+      "regionName": "region"
+    },
+    "change": {
+      "photo": "Change photo",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone number",
+      "region": "Region",
+      "organization": "Organization",
+      "comment": "About me",
+      "placeholder": "Enter data",
+      "password": "Change password",
+      "save": "Save",
+      "cancel": "Cancel",
+      "notNecessarily": "( not necessarily )",
+      "modal": {
+        "title": "Warning!",
+        "unsaved": "You have unsaved changes to your profile.",
+        "dataLoss": "Navigating to another page will result in data loss.",
+        "confirmation": "Are you sure you want to cancel editing?",
+        "cancel": "Cancel",
+        "return": "Return to editing"
+      }
+    },
+    "tasks": {
+      "need": "Need",
+      "provide": "Provide",
+      "usersApplied1": "user responded to the request",
+      "usersApplied2": "users responded to the request",
+      "usersApplied5": "users responded to the request",
+      "see": "See",
+      "applicationDone": "Application completed",
+      "takeRequest": "Take into processing",
+      "reject": "Reject",
+      "cancel": "Cancel",
+      "update": "Update",
+      "emptyOffersRequests": "You don't have any sent responses yet",
+      "emptyOwnRequests": "You don't have published requests yet",
+      "emptyOwnOffers": "You don't have published advertisements yet",
+      "goToSearch": "Go to search page",
+      "hideResponses": "Hide responses"
+    },
+    "changePassword": {
+      "title": "Password must contain at least 6 characters, including a combination of numbers and letters",
+      "currentPwd": "Current password",
+      "enterNewPwd": "Enter new Password",
+      "enterNewPwdOneMoreTime": "Enter new password again",
+      "save": "Save",
+      "backToEdit": "Data editing",
+      "successNotification": "Password has been successfully changed!"
+    },
+    "notifications": {
+      "detailsBtn": "More details",
+      "showMoreText": "Click 'More details' to find out additional information.",
+      "toYourRequest": "To your request",
+      "toYourOffer": "To your offer",
+      "userResponded": "a new user has responded.",
+      "userTookRequest": "A new user  has taken your request for processing.",
+      "goToResponses": "Go to the 'Sent responses' page by clicking 'More details' to find out additional information."
+    },
+    "support": {
+      "text": "Please describe your issue or question in as much detail as possible so that we can provide you with prompt and quality support",
+      "label": "Reason for contact",
+      "placeholder": "Your comment",
+      "msg1": "Your request will be sent to our email address",
+      "msg2": "Expect a response to appear in your notifications.",
+      "send": "Send",
+      "successSentTitle": "Your request has been sent!",
+      "successSentText": "Please expect a response in your notifications."
+    },
+    "statuses": {
+      "inProgress": "In progress",
+      "done": "Request completed",
+      "active": "Active advertisement",
+      "inProcess": "In processing",
+      "canceled": "Request canceled"
+    }
+  },
+  "notFound": {
+    "text": "Sorry, the page was not found. Perhaps it has wandered off. Go back to the homepage and try again."
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "How can I join the 'Heart of Ukraine' project?",
+    "answer": "It's simple. Register on our website, fill out your profile with the required information. You'll see proposals from volunteers, be able to add a request for assistance, or find a volunteer who can provide assistance you're waiting for. As a volunteer, you'll immediately have access to all information on people's needs, and will be able to offer assistance or find a person/group already waiting for your help."
+  },
+  {
+    "id": 2,
+    "question": "What types of assistance can be found on your website?",
+    "answer": "On our website, requests and offers are categorized by regions and categories. You can find offers of assistance from volunteer organizations and individual volunteers for all kinds of people’s needs - from food and clothing to evacuation and legal assistance."
+  },
+  {
+    "id": 3,
+    "question": "If I need help, how can I find support on your website?",
+    "answer": "You can post your request for assistance on our website, describing your situation and needs. Volunteers will be able to see your request and provide the necessary assistance. Second, You can find what you need in the assistance offers from volunteers and quickly and safely receive what you need by responding to the offer."
+  },
+  {
+    "id": 4,
+    "question": "Is there a fee for using your website?",
+    "answer": "Our website is free to use. We provide this service free of charge to all users to promote mutual assistance and support for community initiatives."
+  },
+  {
+    "id": 5,
+    "question": "Are there limitations on the amount of assistance I can receive or provide?",
+    "answer": "No, our platform has no limitations on the number of requests you can place."
+  },
+  {
+    "id": 6,
+    "question": "How can I contact the site administration if I have questions or issues?",
+    "answer": "You can contact us via email: describe the problems you encounter, your questions, or suggestions, send a letter to the email address hunurusni@gmail.com, and our team will review your request as soon as possible."
+  }
+]

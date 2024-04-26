@@ -1,0 +1,110 @@
+.mySwiper {
+  padding-bottom: 67px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 87px;
+  }
+}
+
+.swiper-slide {
+  transform: translateY(24px) !important;
+  cursor: default;
+
+  @media screen and (min-width: 1024px) {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1440px) {
+    transform: translateY(32px) !important;
+  }
+}
+
+.swiper-slide-active {
+  border-radius: 11.506px;
+  padding: 22px;
+  background-color: rgba(205, 227, 250, 0.3);
+  transform: translateY(0) !important;
+  min-height: 390px;
+
+  @media screen and (min-width: 768px) {
+    padding: 24px;
+    height: 405px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: unset;
+    width: 480px !important;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 32px;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 550px !important;
+    max-width: unset !important;
+  }
+}
+
+.swiper-slide-active .date-block {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-slide-active .date-block time,
+.swiper-slide-active .date-block p {
+  font-family: Nunito;
+  font-size: 13.424px;
+  color: #204250;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 12.227px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 14px;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100% !important;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #c2ced8;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 150ms linear;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: conic-gradient(
+    from -3deg at 100% -13%,
+    #ffa502 0deg,
+    #c85120 360deg
+  );
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
