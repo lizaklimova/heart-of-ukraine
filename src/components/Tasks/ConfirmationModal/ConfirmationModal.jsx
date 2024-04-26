@@ -45,7 +45,7 @@ const ConfirmationModal = ({
   const firstName = useSelector(selectUserFistName);
   const lastName = useSelector(selectUserLastName);
   const phoneNumber = useSelector(selectUserNumber);
-
+  // eslint-disable-next-line
   const closeModal = () => {
     setIsConfirmApplicationOpen(false);
     document.body.style.overflow = "visible";

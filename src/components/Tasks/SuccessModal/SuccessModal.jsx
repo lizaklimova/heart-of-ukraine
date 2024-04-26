@@ -21,7 +21,7 @@ const SuccessModal = ({
 }) => {
   const location = useLocation();
   const { t } = useTranslation();
-
+  // eslint-disable-next-line
   const closeModal = () => {
     setShowSuccessModal(false);
     document.body.style.overflow = "visible";
