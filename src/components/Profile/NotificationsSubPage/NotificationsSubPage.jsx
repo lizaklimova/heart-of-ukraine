@@ -1,14 +1,15 @@
 import { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import { getAllNotificationsThunk } from "src/redux/notifications/notificationOperations";
-import { selectAllNotifications } from "src/redux/notifications/notificationSelectors";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import { getAllNotificationsThunk } from "../../../redux/notifications/notificationOperations";
+import { selectAllNotifications } from "../../../redux/notifications/notificationSelectors";
+import { MainContainer } from "layouts/MainContainer.styled";
 import { PersonalInfoText } from "../MyPersonalInfo/MyPersonalInfo.styled";
 import { ProfileH2 } from "../MyProfile/MyProfile.styled";
 import ProfileHeader from "../ProfileHeader/ProfileHeader";
 import ProfileNavigation from "../ProfileNavigation/ProfileNavigation";
-import Notification from "src/components/Notification";
+import Notification from "components/Notification";
 import {
   DesktopWrap,
   MobTabWrap,
@@ -20,14 +21,14 @@ import {
   NotificationsList,
   NotificationsSection,
 } from "./NotificationsSubPage.styled";
-import { NotificationItem } from "src/components/Notification/Notification.styled";
+import { NotificationItem } from "components/Notification/Notification.styled";
 
 const NotificationsSubPage = () => {
   const [isNotificationDeleted, setIsNotificationDeleted] = useState(false);
   const [unreadIds, setUnreadIds] = useState([]);
   const dispatch = useDispatch();
   const { t } = useTranslation();
-
+  const location = useLocation();
   const scrollWrapRef = useRef();
 
   useEffect(() => {

@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom";
-import { getRequestsOfAuthor, getRequestsOfExecutor } from "src/api/requests";
-import paginationHOC from "src/hocs/paginationHOC";
+import { getRequestsOfAuthor, getRequestsOfExecutor } from "api/requests";
+import paginationHOC from "hocs/paginationHOC";
 import MyResponses from "./MyTasks/MyResponses";
 import RequestTab from "./MyTasks/RequestTab";
-import { OFFER_TYPE, REQUEST_TYPE } from "src/constants";
+import { OFFER_TYPE, REQUEST_TYPE } from "constants";
 
 const Tab = () => {
   const location = useLocation();

@@ -1,4 +1,4 @@
-import { baseURL } from "src/api/axiosInstance";
+import { baseURL } from "api/axiosInstance";
 import { useTranslation } from "react-i18next";
 import sprite from "assets/icons/sprite.svg";
 import { DecorOrElement, GoogleLink } from "./GoogleBtn.styled";

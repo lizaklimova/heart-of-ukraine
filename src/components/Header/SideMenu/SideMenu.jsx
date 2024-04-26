@@ -9,9 +9,9 @@ import {
   selectEmail,
   selectUserAvatar,
 } from "../../../redux/auth/authSelectors";
-import { getImages } from "src/api";
-import LangSwitcher from "src/components/Header/LangSwitcher";
-import { BurgerMenuIcon, PersonIcon } from "src/assets/icons";
+import { getImages } from "api";
+import LangSwitcher from "components/Header/LangSwitcher";
+import { BurgerMenuIcon, PersonIcon } from "assets/icons";
 import {
   AvatarHeader,
   BurgerBtn,

@@ -1,5 +1,5 @@
 import { LoaderBackdrop, LoaderImg } from "./MainLoader.styled";
-import spinnerImgPng from "src/assets/images/loader/spinner.png";
+import spinnerImgPng from "assets/images/loader/spinner.png";
 
 const MainLoader = () => {
   return (

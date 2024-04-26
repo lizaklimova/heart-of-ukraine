@@ -17,7 +17,7 @@ import {
   HorizontalArrowTab,
   HorizontalArrowDesk,
 } from "assets/icons";
-import { aboutProject } from "src/data";
+import { aboutProject } from "data";
 import { MainContainer } from "layouts/MainContainer.styled";
 import { Title } from "../CommonStyles.styled";
 import {

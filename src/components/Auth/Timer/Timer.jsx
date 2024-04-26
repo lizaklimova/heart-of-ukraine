@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
-import { setStorageData, getStorageData } from "src/helpers";
+import { setStorageData, getStorageData } from "helpers";
 import { HelpText, TimerNumber } from "./Timer.styled";
 import { AuthSubmitBtn } from "../CommonAuth.styled";
-import { verificationThunk } from "src/redux/auth/authOperations";
+import { verificationThunk } from "../../../redux/auth/authOperations";
 
 const Timer = ({ userEmail }) => {
   const storedTimer = getStorageData("timer");

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import { MainContainer } from "layouts/MainContainer.styled";
 import BackHomeBtn from "components/Auth/BackHomeBtn";
 import { TasksSection, TasksTitle } from "../Tasks.styled";
-import CreateTaskForm from "src/components/Tasks/CreateTask/CreateTaskForm";
+import CreateTaskForm from "components/Tasks/CreateTask/CreateTaskForm";
 
 const CreateTask = () => {
   const [categoriesSearch, setCategoriesSearch] = useState([]);

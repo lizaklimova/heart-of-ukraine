@@ -3,14 +3,14 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Toaster } from "react-hot-toast";
 import { RestrictedRoute, PrivateRoute } from "routes";
-import { getCurrentThunk } from "src/redux/auth/authOperations";
-import { setToken } from "src/redux/auth/authSlice";
+import { getCurrentThunk } from "../../redux/auth/authOperations";
+import { setToken } from "../../redux/auth/authSlice";
 import Layout from "layouts/Layout";
-import { selectIsRefreshing } from "src/redux/auth/authSelectors";
+import { selectIsRefreshing } from "../../redux/auth/authSelectors";
 import MainLoader from "../Loaders/MainLoader";
 import MyTasks from "../Profile/Tabs/MyTasks";
 import Tab from "../Profile/Tabs/Tab";
-import { useWindowWidth } from "src/hooks/useWindowWidth";
+import { useWindowWidth } from "hooks/useWindowWidth";
 
 const HomePage = lazy(() => import("pages/HomePage.jsx"));
 const AuthPage = lazy(() => import("pages/AuthPage.jsx"));

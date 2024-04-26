@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import sprite from "assets/icons/sprite.svg";
-import { smoothScrollToTarget } from "src/helpers";
-import { LogoIcon } from "src/assets/icons";
-import { useWindowWidth } from "src/hooks/useWindowWidth";
+import { smoothScrollToTarget } from "helpers";
+import { LogoIcon } from "assets/icons";
+import { useWindowWidth } from "hooks/useWindowWidth";
 import {
   FooterContainer,
   AllRightsReservedBlock,

@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import EmptyMsg from "src/components/Profile/EmptyMsg";
-import Card from "src/components/Tasks/Card";
-import Pagination from "src/components/Pagination";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import EmptyMsg from "components/Profile/EmptyMsg";
+import Card from "components/Tasks/Card";
+import Pagination from "components/Pagination";
+import { MainContainer } from "layouts/MainContainer.styled";
 import {
   ProfileTasksNav,
   ProfileTasksNavLink,

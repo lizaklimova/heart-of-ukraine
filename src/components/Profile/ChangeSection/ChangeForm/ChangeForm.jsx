@@ -3,8 +3,8 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import SmallSpinner from "src/components/Loaders/SmallSpinner";
-import changeSchema from "src/schemas/changeSchema";
+import SmallSpinner from "components/Loaders/SmallSpinner";
+import changeSchema from "schemas/changeSchema";
 import sprite from "assets/icons/sprite.svg";
 import {
   selectEmail,
@@ -15,9 +15,12 @@ import {
   selectUserOrganization,
   selectUserRegion,
 } from "../../../../redux/auth/authSelectors";
-import { changeProfileThunk, getCurrentThunk } from "../../../../redux/auth/authOperations";
-import WarningModal from "src/components/Profile/WarningModal/WarningModal";
-import RegionsSelect from "src/components/Tasks/ConfirmationModal/RegionsSelect";
+import {
+  changeProfileThunk,
+  getCurrentThunk,
+} from "../../../../redux/auth/authOperations";
+import WarningModal from "components/Profile/WarningModal/WarningModal";
+import RegionsSelect from "components/Tasks/ConfirmationModal/RegionsSelect";
 import {
   ChangeArea,
   ChangeBtnWrap,
@@ -31,7 +34,7 @@ import {
   ChangeSubmitBtn,
   InputsCont,
 } from "./ChangeForm.styled";
-import { OpenSelectBtn } from "src/components/Tasks/ConfirmationModal/ConfirmationModal.styled";
+import { OpenSelectBtn } from "components/Tasks/ConfirmationModal/ConfirmationModal.styled";
 
 const ChangeForm = () => {
   const { t, i18n } = useTranslation();
@@ -48,7 +51,9 @@ const ChangeForm = () => {
   const userComment = useSelector(selectUserComment);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [regionForBackend, setRegionForBackend] = useState(userRegion.regionEn || "");
+  const [regionForBackend, setRegionForBackend] = useState(
+    userRegion.regionEn || ""
+  );
   const [isRegionsSelectOpen, setIsRegionsSelectOpen] = useState(false);
 
   const openModalToggle = () => {

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import MyProfile from "src/components/Profile/MyProfile";
-import ProfileHeader from "src/components/Profile/ProfileHeader/ProfileHeader";
-import ProfileNavigation from "src/components/Profile/ProfileNavigation";
-import { useWindowWidth } from "src/hooks/useWindowWidth";
+import MyProfile from "components/Profile/MyProfile";
+import ProfileHeader from "components/Profile/ProfileHeader/ProfileHeader";
+import ProfileNavigation from "components/Profile/ProfileNavigation";
+import { useWindowWidth } from "hooks/useWindowWidth";
 
 const ProfilePage = () => {
   const location = useLocation();

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import NotificationsSubPage from "src/components/Profile/NotificationsSubPage";
+import NotificationsSubPage from "components/Profile/NotificationsSubPage";
 
 const NotificationsPage = () => {
   const location = useLocation();

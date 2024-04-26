@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import MyChangeInfo from "src/components/Profile/MyChangeInfo";
-import ProfileHeader from "src/components/Profile/ProfileHeader/ProfileHeader";
+import MyChangeInfo from "components/Profile/MyChangeInfo";
+import ProfileHeader from "components/Profile/ProfileHeader/ProfileHeader";
 
 const ChangeInfoPage = () => {
   const location = useLocation();

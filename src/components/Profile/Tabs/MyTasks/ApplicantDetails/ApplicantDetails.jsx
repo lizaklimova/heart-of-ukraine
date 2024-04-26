@@ -4,7 +4,7 @@ import {
   approveHelpRequest,
   rejectHelpRequest,
   completeHelpRequest,
-} from "src/api";
+} from "api";
 import {
   DetailsBlock,
   TimeWrap,
@@ -12,7 +12,7 @@ import {
   BtnsBlock,
   RejectBtn,
 } from "./ApplicantDetails.styled";
-import { formatDate, formatTime } from "src/helpers";
+import { formatDate, formatTime } from "helpers";
 
 const ApplicantDetails = ({
   data: {

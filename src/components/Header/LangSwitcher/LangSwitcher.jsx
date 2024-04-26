@@ -11,7 +11,12 @@ import {
   TriangleSvg,
   TriangleSvgWrap,
 } from "./LangSwitcher.styled";
-import { FlagENGIcon, FlagUAIcon, SwitcherDropdownIcon, SwitcherDropupIcon } from "src/assets/icons";
+import {
+  FlagENGIcon,
+  FlagUAIcon,
+  SwitcherDropdownIcon,
+  SwitcherDropupIcon,
+} from "assets/icons";
 
 const LangSwitcher = ({ classN }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

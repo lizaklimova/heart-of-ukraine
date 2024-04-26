@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { MAX_FILE_SIZE_BYTES } from "src/constants";
+import { MAX_FILE_SIZE_BYTES } from "constants";
 import { selectUserAvatar } from "../../../redux/auth/authSelectors";
 import { getImages } from "api";
-import { getCurrentThunk } from "../../..//redux/auth/authOperations";
+import { getCurrentThunk } from "../../../redux/auth/authOperations";
 import { useTranslation } from "react-i18next";
-import { changeAvatar } from "src/api";
+import { changeAvatar } from "api";
 import Avatar from "../ProfilePersonHeader/Avatar";
 import ChangeForm from "./ChangeForm";
 import {

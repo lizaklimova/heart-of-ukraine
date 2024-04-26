@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { selectUserEmail } from "src/redux/auth/authSelectors";
-import Timer from "src/components/Auth/Timer";
-import { hideEmail } from "src/helpers";
-import { setStorageData, getStorageData } from "src/helpers";
+import { selectUserEmail } from "../../../redux/auth/authSelectors";
+import Timer from "components/Auth/Timer";
+import { hideEmail } from "helpers";
+import { setStorageData, getStorageData } from "helpers";
 import {
   MailSpan,
   VerificationHead,

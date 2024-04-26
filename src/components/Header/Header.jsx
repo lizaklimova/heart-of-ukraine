@@ -6,14 +6,14 @@ import {
   selectIsLoggedIn,
   selectUserAvatar,
 } from "../../redux/auth/authSelectors";
-import { selectAllUnreadNotifications } from "src/redux/notifications/notificationSelectors";
-import { getAllUnreadNotificationsThunk } from "src/redux/notifications/notificationOperations";
-import { getImages } from "src/api";
-import { smoothScrollToTarget } from "src/helpers";
-import SideMenu from "src/components/Header/SideMenu";
-import LangSwitcher from "src/components/Header/LangSwitcher";
-import { BurgerMenuIcon, LogoIcon, PersonIcon } from "src/assets/icons";
-import { useWindowWidth } from "src/hooks/useWindowWidth";
+import { selectAllUnreadNotifications } from "../../redux/notifications/notificationSelectors";
+import { getAllUnreadNotificationsThunk } from "../../redux/notifications/notificationOperations";
+import { getImages } from "api";
+import { smoothScrollToTarget } from "helpers";
+import SideMenu from "components/Header/SideMenu";
+import LangSwitcher from "components/Header/LangSwitcher";
+import { BurgerMenuIcon, LogoIcon, PersonIcon } from "assets/icons";
+import { useWindowWidth } from "hooks/useWindowWidth";
 import {
   HeaderButton,
   HeaderWrap,
@@ -148,4 +148,3 @@ const Header = () => {
 };
 
 export default Header;
-

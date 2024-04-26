@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import ProfileInfoSubPage from "src/components/Profile/ProfileInfoSubPage";
-import MyTasks from "src/components/Profile/Tabs/MyTasks";
-import ChangeInfoSubPage from "src/components/Profile/ChangeInfoSubPage";
+import ProfileInfoSubPage from "components/Profile/ProfileInfoSubPage";
+import MyTasks from "components/Profile/Tabs/MyTasks";
+import ChangeInfoSubPage from "components/Profile/ChangeInfoSubPage";
 import ChangePasswordPage from "./ChangePasswordPage";
-import SupportSubPage from "src/components/Profile/SupportSubPage";
-import NotificationsSubPage from "src/components/Profile/NotificationsSubPage";
+import SupportSubPage from "components/Profile/SupportSubPage";
+import NotificationsSubPage from "components/Profile/NotificationsSubPage";
 
 const ProfileSubPage = () => {
   const { id } = useParams();

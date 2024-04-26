@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { recoveryPassThunk } from "src/redux/auth/authOperations";
+import { recoveryPassThunk } from "../../../redux/auth/authOperations";
 import ShowPasswordBtn from "../ShowPasswordBtn";
 import { passwordSchema } from "schemas";
-import SmallSpinner from "src/components/Loaders/SmallSpinner";
+import SmallSpinner from "components/Loaders/SmallSpinner";
 import PwdRequirements from "../PwdRequirements";
 import {
   RecoveryPassHead,
@@ -110,11 +110,7 @@ const RecoveryPassContent = () => {
           <AuthInput
             style={{ marginBottom: "15px" }}
             type={isPwdShown ? "text" : "password"}
-            className={
-              errors.password
-                ? "invalid password"
-                : "password"
-            }
+            className={errors.password ? "invalid password" : "password"}
             placeholder={t("auth.placeholder")}
             value={password}
             onChange={handleInputChange(setPassword)}
@@ -133,11 +129,7 @@ const RecoveryPassContent = () => {
           {t("passRecover.passwordConf")}
           <AuthInput
             type={isRePwdShown ? "text" : "password"}
-            className={
-              errors.repeatPassword
-                ? "invalid password"
-                : "password"
-            }
+            className={errors.repeatPassword ? "invalid password" : "password"}
             placeholder={t("auth.placeholder")}
             value={repeatPassword}
             onChange={handleInputChange(setRepeatPassword)}

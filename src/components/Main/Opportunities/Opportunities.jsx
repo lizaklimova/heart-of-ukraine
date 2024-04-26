@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { opportunitiesDataEn, opportunitiesDataUa } from "src/data";
+import { opportunitiesDataEn, opportunitiesDataUa } from "data";
 import Opportunity from "./Opportunity";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import { MainContainer } from "layouts/MainContainer.styled";
 import { Title } from "../CommonStyles.styled";
 import {
   OpportunitiesList,

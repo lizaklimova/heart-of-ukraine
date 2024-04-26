@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import sprite from "src/assets/icons/sprite.svg";
-import { statusesColors, STATUSES_VALUES } from "src/constants";
+import sprite from "assets/icons/sprite.svg";
+import { statusesColors, STATUSES_VALUES } from "constants";
 import { StatusBlock } from "./StatusTag.styled";
 
 const StatusTag = ({ tag }) => {

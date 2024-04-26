@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
-import { loginThunk } from "src/redux/auth/authOperations";
+import { loginThunk } from "../../../redux/auth/authOperations";
 import { LOGIN_INIT_VALUES } from "constants/index";
 import ShowPasswordBtn from "../ShowPasswordBtn";
-import SmallSpinner from "src/components/Loaders/SmallSpinner";
+import SmallSpinner from "components/Loaders/SmallSpinner";
 import {
   AuthForm,
   AuthLabel,

@@ -1,7 +1,7 @@
 import Modal from "react-modal";
-import { XModalIcon } from "src/assets/icons";
+import { XModalIcon } from "assets/icons";
 import { useEffect } from "react";
-import { useWindowWidth } from "src/hooks/useWindowWidth";
+import { useWindowWidth } from "hooks/useWindowWidth";
 import { useTranslation } from "react-i18next";
 import {
   ButtonCloseModal,

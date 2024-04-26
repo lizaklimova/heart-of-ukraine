@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { OFFER_TYPE, REQUEST_TYPE } from "constants";
-import paginationHOC from "src/hocs/paginationHOC";
+import paginationHOC from "hocs/paginationHOC";
 import { getAllRequests, getFilteredRequests } from "api";
 import Tasks from "components/Tasks";
 

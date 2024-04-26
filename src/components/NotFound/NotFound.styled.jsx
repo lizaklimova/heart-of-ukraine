@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import decorRight from "src/assets/images/notFound/decor-right.svg";
-import decorRightTab from "src/assets/images/notFound/decor-right-tab.svg";
-import decorRight1920 from "src/assets/images/notFound/decor-right-1920.svg";
-import decorLeft from "src/assets/images/notFound/decor-left.svg";
-import decorLeftDesk from "src/assets/images/notFound/decor-left-desk.svg";
-import decorLeft1920 from "src/assets/images/notFound/decor-left-1920.svg";
+import decorRight from "assets/images/notFound/decor-right.svg";
+import decorRightTab from "assets/images/notFound/decor-right-tab.svg";
+import decorRight1920 from "assets/images/notFound/decor-right-1920.svg";
+import decorLeft from "assets/images/notFound/decor-left.svg";
+import decorLeftDesk from "assets/images/notFound/decor-left-desk.svg";
+import decorLeft1920 from "assets/images/notFound/decor-left-1920.svg";
 
 export const NotFoundSection = styled.div`
   padding: 283px 0 268px 0;

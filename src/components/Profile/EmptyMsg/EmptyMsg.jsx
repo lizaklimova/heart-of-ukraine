@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import emptyPic from "src/assets/images/profile/empty.png";
+import emptyPic from "assets/images/profile/empty.png";
 import { EmptyBlock, EmptyText, GoToSearchLink } from "./EmptyMsg.styled";
-import { smoothScrollToTarget } from "src/helpers";
+import { smoothScrollToTarget } from "helpers";
 
 const EmptyMsg = ({ text }) => {
   const { t } = useTranslation();

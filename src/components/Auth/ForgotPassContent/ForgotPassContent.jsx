@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { emailSchema } from "schemas";
-import SmallSpinner from "src/components/Loaders/SmallSpinner";
-import { forgotPassThunk } from "src/redux/auth/authOperations";
-import { hideEmail } from "src/helpers";
+import SmallSpinner from "components/Loaders/SmallSpinner";
+import { forgotPassThunk } from "../../../redux/auth/authOperations";
+import { hideEmail } from "helpers";
 import {
   SmallText,
   MailSpan,

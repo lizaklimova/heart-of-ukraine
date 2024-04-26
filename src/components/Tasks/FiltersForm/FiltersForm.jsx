@@ -7,7 +7,7 @@ import {
   MAX_TAB_LENGTH_FOR_FILTERS,
 } from "constants";
 import { determineFiltersLength } from "helpers";
-import TrashIcon from "src/assets/icons/TrashIcon";
+import TrashIcon from "assets/icons/TrashIcon";
 import SearchFiltersList from "../SearchFiltersList";
 import {
   Form,

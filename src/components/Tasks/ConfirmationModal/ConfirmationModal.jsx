@@ -9,15 +9,15 @@ import {
   selectUserFistName,
   selectUserLastName,
   selectUserNumber,
-} from "src/redux/auth/authSelectors";
+} from "../../../redux/auth/authSelectors";
 import sprite from "assets/icons/sprite.svg";
 import RegionsSelect from "./RegionsSelect";
-import SmallSpinner from "src/components/Loaders/SmallSpinner";
+import SmallSpinner from "components/Loaders/SmallSpinner";
 import {
   CheckBox,
   PrivacyLabel,
   PrivacyText,
-} from "src/components/Auth/SignUpForm/SignUpForm.styled";
+} from "components/Auth/SignUpForm/SignUpForm.styled";
 import {
   ConfirmBackdrop,
   ConfirmModal,

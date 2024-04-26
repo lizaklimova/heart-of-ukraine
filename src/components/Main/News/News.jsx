@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { getNews } from "src/api/news/getNews";
+import { getNews } from "api/news/getNews";
 import NewsSlider from "./NewsSlider";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import { MainContainer } from "layouts/MainContainer.styled";
 import { Title } from "../CommonStyles.styled";
 import { NewsSection } from "./News.styled";
 

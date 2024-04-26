@@ -1,22 +1,23 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-hot-toast";
-import { changePassword } from "src/api";
-import { CHANGE_PWD_INIT_VALUES } from "src/constants";
-import { changePasswordSchema } from "src/schemas";
+import { changePassword } from "api";
+import { CHANGE_PWD_INIT_VALUES } from "constants";
+import { changePasswordSchema } from "schemas";
 import ProfileNavigation from "../ProfileNavigation";
-import PwdRequirements from "src/components/Auth/PwdRequirements";
-import SmallSpinner from "src/components/Loaders/SmallSpinner";
+import PwdRequirements from "components/Auth/PwdRequirements";
+import SmallSpinner from "components/Loaders/SmallSpinner";
 import ProfileHeader from "../ProfileHeader";
-import ShowPasswordBtn from "src/components/Auth/ShowPasswordBtn";
-import BackHomeBtn from "src/components/Auth/BackHomeBtn";
-import Notification from "src/components/Notification";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import ShowPasswordBtn from "components/Auth/ShowPasswordBtn";
+import BackHomeBtn from "components/Auth/BackHomeBtn";
+import Notification from "components/Notification";
+import { MainContainer } from "layouts/MainContainer.styled";
 import {
   ResetPwdBlock,
   ResetPwdLink,
-} from "src/components/Auth/SignInForm/SignInForm.styled";
+} from "components/Auth/SignInForm/SignInForm.styled";
 import {
   DesktopWrap,
   MobTabWrap,
@@ -33,14 +34,14 @@ import {
   ChangeText,
   SaveChangesBtn,
 } from "./ChangePwd.styled";
-import { AuthErrorText } from "src/components/Auth/CommonAuth.styled";
+import { AuthErrorText } from "components/Auth/CommonAuth.styled";
 
 const ChangePwd = () => {
   const [isOldPwdShown, setIsOldPwdShownn] = useState(false);
   const [isNewPwdShown, setIsNewPwdShownn] = useState(false);
   const [isConfirmNewPwdShown, setIsConfirmNewPwdShown] = useState(false);
   const [submitError, setSubmitError] = useState(null);
-
+  const location = useLocation();
   const { t, i18n } = useTranslation();
 
   const onSubmit = async (

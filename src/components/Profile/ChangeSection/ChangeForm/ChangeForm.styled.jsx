@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { gradientTextHover } from "src/components/Tasks/Tasks.styled";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { gradientTextHover } from "components/Tasks/Tasks.styled";
 
 export const ChangeFormEl = styled.form`
   width: 100%;

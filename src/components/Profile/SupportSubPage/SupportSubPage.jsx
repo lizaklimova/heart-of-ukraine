@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import sprite from "src/assets/icons/sprite.svg";
+import sprite from "assets/icons/sprite.svg";
 import ProfileNavigation from "../ProfileNavigation";
 import ProfileHeader from "../ProfileHeader";
 import {
@@ -11,7 +12,7 @@ import {
 } from "../Tabs/MyTasks/MyTasks.styled";
 import { ProfileH2 } from "../MyProfile/MyProfile.styled";
 import { PersonalInfoText } from "../MyPersonalInfo/MyPersonalInfo.styled";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import { MainContainer } from "layouts/MainContainer.styled";
 import {
   SuccessfullySentBlock,
   SupportForm,
@@ -22,13 +23,14 @@ import {
   ModalLink,
   ModalPic,
   ModalTitle,
-} from "src/components/Tasks/SuccessModal/SuccessModal.styled";
-import { ModalText } from "src/components/Tasks/ConfirmationModal/ConfirmationModal.styled";
+} from "components/Tasks/SuccessModal/SuccessModal.styled";
+import { ModalText } from "components/Tasks/ConfirmationModal/ConfirmationModal.styled";
 
 const SupportSubPage = () => {
   const [isFieldTouched, setIsFieldTouched] = useState(false);
   const [shouldHideForm, setShouldHideForm] = useState(false);
   const { t } = useTranslation();
+  const location = useLocation();
 
   const handleSupportSubmit = (event) => {
     event.preventDefault();

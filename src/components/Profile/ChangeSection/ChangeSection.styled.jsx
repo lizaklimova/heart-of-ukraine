@@ -1,5 +1,5 @@
-import { gradientTextHover } from "src/components/Tasks/Tasks.styled";
 import styled from "styled-components";
+import { gradientTextHover } from "components/Tasks/Tasks.styled";
 
 export const ChangeWrap = styled.div`
   padding: 80px 9px 69px 9px;

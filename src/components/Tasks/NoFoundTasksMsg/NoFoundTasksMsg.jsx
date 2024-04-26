@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
-import heartBoxPic from "src/assets/images/tasks/emptyTasks.png";
+import heartBoxPic from "assets/images/tasks/emptyTasks.png";
 import { NotFoundTasksSection } from "./NoFoundTasksMsg.styled";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import { MainContainer } from "layouts/MainContainer.styled";
 
 const NoFoundTasksMsg = ({ className }) => {
   const { t } = useTranslation();

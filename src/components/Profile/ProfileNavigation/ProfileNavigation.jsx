@@ -11,7 +11,7 @@ import {
   NotifyIcon,
   ProfileIcon,
   RequestsIcon,
-} from "src/assets/icons";
+} from "assets/icons";
 import {
   NavCont,
   NavigationWrap,

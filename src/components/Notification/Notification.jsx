@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { setNotificationAsRead } from "src/api/notifications";
-import { REQUEST_TYPE } from "src/constants";
-import { formatDate, formatTime, smoothScrollToTarget } from "src/helpers";
-import sprite from "src/assets/icons/sprite.svg";
-import RightArrow from "src/assets/icons/RightArrow";
+import { setNotificationAsRead } from "api/notifications";
+import { REQUEST_TYPE } from "constants";
+import { formatDate, formatTime, smoothScrollToTarget } from "helpers";
+import sprite from "assets/icons/sprite.svg";
+import RightArrow from "assets/icons/RightArrow";
 import {
   MoreDetailsLink,
   NotificationBlock,

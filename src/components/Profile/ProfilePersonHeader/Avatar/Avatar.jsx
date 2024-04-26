@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { selectUserAvatar } from "src/redux/auth/authSelectors";
-import { getImages } from "src/api";
-import { CameraIcon, PersonIcon } from "src/assets/icons";
+import { selectUserAvatar } from "../../../../redux/auth/authSelectors";
+import { getImages } from "api";
+import { CameraIcon, PersonIcon } from "assets/icons";
 import { AvatarHeader, CameraWrap } from "./Avatar.styled";
 
 const Avatar = ({ classN, avatar }) => {

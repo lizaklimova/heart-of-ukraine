@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import MyPersonalInfo from "src/components/Profile/MyPersonalInfo";
-import ProfileHeader from "src/components/Profile/ProfileHeader/ProfileHeader";
+import MyPersonalInfo from "components/Profile/MyPersonalInfo";
+import ProfileHeader from "components/Profile/ProfileHeader/ProfileHeader";
 
 const PersonalInfoPage = () => {
   const location = useLocation();

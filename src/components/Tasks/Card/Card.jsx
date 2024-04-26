@@ -5,11 +5,11 @@ import { useTranslation } from "react-i18next";
 import { getImages, cancelHelpRequest } from "api";
 import { formatDate, formatTime, determineUsersQnty } from "helpers";
 import { STATUSES_VALUES } from "constants";
-import { selectEmail } from "src/redux/auth/authSelectors";
+import { selectEmail } from "../../../redux/auth/authSelectors";
 import sprite from "assets/icons/sprite.svg";
 import listArrow from "assets/images/tasks/list-arrow.svg";
-import DetailsDots from "src/assets/icons/DetailsDots";
-import { PersonIcon } from "src/assets/icons";
+import DetailsDots from "assets/icons/DetailsDots";
+import { PersonIcon } from "assets/icons";
 import {
   CardItem,
   ApplyButtonsWrap,
@@ -28,14 +28,14 @@ import {
   ActionsBlock,
 } from "./Card.styled";
 import StatusTag from "../StatusTag";
-import ApplicantDetails from "src/components/Profile/Tabs/MyTasks/ApplicantDetails/ApplicantDetails";
-import { NewTasksWrap } from "src/components/Profile/Tabs/MyTasks/MyTasks.styled";
+import ApplicantDetails from "components/Profile/Tabs/MyTasks/ApplicantDetails/ApplicantDetails";
+import { NewTasksWrap } from "components/Profile/Tabs/MyTasks/MyTasks.styled";
 import {
   DetailsMsgWrap,
   DetailsQntyCircle,
   DetailsText,
   HideDetailsBtn,
-} from "src/components/Profile/Tabs/MyTasks/ApplicantDetails/ApplicantDetails.styled";
+} from "components/Profile/Tabs/MyTasks/ApplicantDetails/ApplicantDetails.styled";
 // import { SvgLogoUserHeader } from "src/components/Header/Header.styled";
 
 const Card = ({

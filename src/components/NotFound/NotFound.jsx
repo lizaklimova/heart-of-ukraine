@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
-import heartPic from "src/assets/images/notFound/notfound-heart.png";
+import heartPic from "assets/images/notFound/notfound-heart.png";
 import {
   NotFoundSection,
   StatusCodeWrap,
   GoHomeBtn,
   NotFoundText,
 } from "./NotFound.styled";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import { MainContainer } from "layouts/MainContainer.styled";
 
 const NotFound = () => {
   const { t } = useTranslation();

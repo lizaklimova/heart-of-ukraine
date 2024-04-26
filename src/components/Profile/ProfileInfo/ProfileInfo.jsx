@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
-import { RedTrashIcon } from "src/assets/icons";
+import { RedTrashIcon } from "assets/icons";
 import {
   selectEmail,
   selectUserComment,

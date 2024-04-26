@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useSearchParams, Link } from "react-router-dom";
-import { STATUSES_VALUES } from "src/constants";
-import sprite from "src/assets/icons/sprite.svg";
-import { MainContainer } from "src/layouts/MainContainer.styled";
-import PlusIcon from "src/assets/icons/PlusIcon";
+import { STATUSES_VALUES } from "constants";
+import sprite from "assets/icons/sprite.svg";
+import { MainContainer } from "layouts/MainContainer.styled";
+import PlusIcon from "assets/icons/PlusIcon";
 import Card from "./Card";
 import BackHomeBtn from "../Auth/BackHomeBtn";
 import FiltersForm from "./FiltersForm";

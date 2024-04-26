@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import FAQsItem from "../FAQsItem/FAQsItem";
-import questionsUa from "src/data/questionsUa.json";
-import questionsEn from "src/data/questionsEn.json";
-import { MainContainer } from "src/layouts/MainContainer.styled";
+import questionsUa from "data/questionsUa.json";
+import questionsEn from "data/questionsEn.json";
+import { MainContainer } from "layouts/MainContainer.styled";
 import { FAQList, FAQSection, FAQWrap, FAQh2 } from "./FAQs.styled";
 import { useEffect, useState } from "react";
 

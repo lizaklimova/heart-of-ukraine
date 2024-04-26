@@ -6,14 +6,14 @@ import { useTranslation } from "react-i18next";
 import { toast } from "react-hot-toast";
 import sprite from "assets/icons/sprite.svg";
 import { registerSchema } from "schemas";
-import { REGISTER_INIT_VALUES } from "src/constants";
-import { registrationThunk } from "src/redux/auth/authOperations";
+import { REGISTER_INIT_VALUES } from "constants";
+import { registrationThunk } from "../../../redux/auth/authOperations";
 import ShowPasswordBtn from "../ShowPasswordBtn";
 import PwdRequirements from "../PwdRequirements";
-import Notification from "src/components/Notification";
-import SmallSpinner from "src/components/Loaders/SmallSpinner";
-import { authSlice } from "src/redux/auth/authSlice";
-import { setStorageData } from "src/helpers";
+import Notification from "components/Notification";
+import SmallSpinner from "components/Loaders/SmallSpinner";
+import { authSlice } from "../../../redux/auth/authSlice";
+import { setStorageData } from "helpers";
 import {
   AuthForm,
   AuthInput,
@@ -62,22 +62,22 @@ const SignUpForm = () => {
       registrationThunk({ ...formData, agreement: undefined })
     );
 
-    if (res.error) {
-      toast.custom((t) => (
-        <Notification
-          iconId="notify-error"
-          className="error"
-          title={"auth.registerErrorMsg"}
-          text={
-            isLanguageUk
-              ? res.payload.errorText.uaErrorText
-              : res.payload.errorText.enErrorText
-          }
-          closeToaster={() => toast.remove(t.id)}
-          variant="auth"
-        />
-      ));
-    }
+    // if (res.error) {
+    //   toast.custom((t) => (
+    //     <Notification
+    //       iconId="notify-error"
+    //       className="error"
+    //       title={"auth.registerErrorMsg"}
+    //       text={
+    //         isLanguageUk
+    //           ? res.payload.errorText.uaErrorText
+    //           : res.payload.errorText.enErrorText
+    //       }
+    //       closeToaster={() => toast.remove(t.id)}
+    //       variant="auth"
+    //     />
+    //   ));
+    // }
 
     dispatch(authSlice.actions.setUserEmail(formData.email));
     setStorageData("timer", 60);
